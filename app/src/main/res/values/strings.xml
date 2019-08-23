@@ -3,4 +3,31 @@
     <string name="app_name">Quake Report</string>
     <string name="no_earthquakes_found">No earthquakes found.</string>
     <string name="no_connection">No connection</string>
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">Earthquake Settings</string>
+
+    <!-- SOS: the settings' values like 6, magnitude & time must NOT be translated cause I append
+    them as parameters to the url I send to the server! -->
+    <string name="min_magnitude_title">Minimum Magnitude</string>
+    <string name="min_magnitude_pref_key" translatable="false">min_magnitude_pref_key</string>
+    <string name="min_magnitude_default_value" translatable="false">6</string>
+
+    <string name="order_by_title">Order By</string>
+    <string name="order_by_pref_key" translatable="false">order_by_pref_key</string>
+    <string name="order_by_default_value" translatable="false">magnitude</string>
+
+    <!-- these are the labels for the different choices of Order By setting -->
+    <string-array name="order_by_choice_labels">
+        <item>@string/order_by_magnitude_label</item>
+        <item>@string/order_by_most_recent_label</item>
+    </string-array>
+
+    <string name="order_by_magnitude_label">Magnitude</string>
+    <string name="order_by_most_recent_label">Most Recent</string>
+
+    <!-- these are the values for the different choices of Order By setting -->
+    <string-array name="order_by_choice_values">
+        <item>magnitude</item>
+        <item>time</item>
+    </string-array>
 </resources>
